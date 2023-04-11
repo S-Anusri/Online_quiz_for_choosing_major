@@ -1,0 +1,209 @@
+@charset "UTF-8";
+   .c {
+        font-weight: bold;
+        text-align: center;
+        color: #0000ff;
+    }        
+    .error {
+        font-weight: bold;
+        color: #ff0000;
+    } 
+    td {
+        text-align: center;
+    }        
+    *, *:before, *:after {
+      box-sizing: border-box;
+    }
+    #title {
+      color: #ffffff;
+      font-weight: bold;
+      font-size: 30px;
+    }
+    a:link {
+      font-weight: bold;
+      color: #ff3503;
+    }
+    a:visited {
+      font-weight: bold;
+      color: #6800bd;
+    }
+    a:hover {
+      color: #2ea22e;
+    }
+    a:active {
+      color: #0055ff;
+    }
+    #prop {
+      background-color: rgb(255, 243, 220);
+      border-radius: 15px;
+      margin-right: 10px;
+      margin-left: 10px;
+      font-size: 20px;
+    }
+    #prop1 {
+      background-color: rgb(255, 243, 220);
+      border-radius: 15px;
+      height: 5%;
+      font-size: 10px;
+      padding: 0px;
+      padding-left: 1px;
+      padding-right: 1px;
+    }
+    #col {
+      color: #0040ff;
+      font-size: 25px;
+      font-weight: bold;
+    }
+    body{
+      background-color: #ffffff;
+      margin: solid 1px black;
+    }
+    h1 {
+      text-align: center;
+    }
+    .center1 {
+      background-color: #ffffff;
+      text-align: center;
+      width: 100%;
+      height: 100%;
+      padding-top: 10px;
+      padding-bottom: 2px;
+      font-size: 18px;
+    }
+    #center2 {
+      background-color: rgb(255, 243, 220);
+      text-align: center;
+      border-radius: 20px;
+      width: 100%;
+      height: 80%;
+      padding-left: 40px;
+      padding-right: 40px;
+      padding-top: 10px;
+      padding-bottom: 2px;
+      font-size: 18px;
+    }
+    #btn{
+      font-size: 25px;
+      font-weight: bold;
+      color: red;
+    }
+    div {
+      background-color: #ffffff;
+      border-radius: 15px;
+      padding: 15px;
+    } 
+    .size {
+      font-size: 68px;
+      font-family: Sans-serif;
+    }
+    .t1 {
+      text-align: center;
+      font-size: 25px;
+      color: #0055ff;
+      font-weight: bold;
+    }
+    .center {
+      display: block;
+      margin-right: auto;
+      margin-left: auto;      
+    }
+    .col {
+      background-color:rgb(255, 255, 255);
+      margin-right: 5px;
+      margin-left: 5px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      display: inline-block;
+      height: 80%;
+      width: 98%;
+    }
+    .col1 {
+      background-color: #ff8c00;
+      border: solid 0.5px #ff8c00;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      display: inline-block;
+      height: 100%;
+      width: 20%;
+      vertical-align: middle;
+    }
+    .col2 {
+      background-color: #0a4b78;
+      border: solid 1px black;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      margin-left: 45px;
+      display: inline-block;
+      border-radius: 12px;
+      height: 70%;
+      width: 90%;
+      vertical-align: middle;
+    }
+
+    .col3 {
+      display: inline-block;
+      border: solid 0.8px;
+      margin-left: 10px;
+      margin-right: 4px;
+      border: solid 1px #0a4b78;
+      text-align: center;
+      height: 100%;
+      width: 15.2%;
+    }
+    .col31 {
+      display: inline-block;
+      border: solid 0.8px;
+      margin-left: 2.2px;
+      margin-right: 4px;
+      border: solid 1px #0a4b78;
+      text-align: center;
+      height: 100%;
+      width: 12%;
+    }
+    .col4 {
+      display: inline-block;
+      height: 100%;
+      width: 50%;
+      border: 1px solid black;
+    }
+    .col41 {
+      display: inline-block;
+      margin-left: 15px;
+      margin-top: 5px;
+      margin-right: 15px;
+      border: 0.5px solid #b3ecff;
+      width: 22%;
+      height: 100%;
+    }
+    .col42 {
+      display: inline-block;
+      border: solid 0.8px;
+      margin-left: 6px;
+      margin-right: 0.5px;
+      text-align: center;
+      height: 100%;
+      width: 30%;
+    }
+    .col5 {
+      width: 30%;
+      height: 100%;
+      display: inline-block;
+    }
+    .p1 {
+      color:black;
+      text-align: center;
+      border-radius: 15px;
+      background-color: rgb(211, 215, 207);
+      font-weight: bold;
+      font-size: 35px;
+    }
+    .p11 {
+      color:black;
+      text-align: center;
+      border-radius: 15px;
+      height: 10%;
+      background-color: rgb(211, 215, 207);
+      font-weight: bold;
+      font-size: 20px;
+      padding: 0px;
+    }
