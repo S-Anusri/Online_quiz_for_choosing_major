@@ -28,7 +28,7 @@ public class Question {
 			con.setAutoCommit(false);
 			PreparedStatement query;
 			ResultSet rs;
-			if(questionCount <= 4) {
+			if(questionCount <= 8) {
 				query = con.prepareStatement(personality);
 				query.setInt(1, this.QID);
 				con.commit();

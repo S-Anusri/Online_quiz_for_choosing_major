@@ -34,7 +34,7 @@ public class questionSetSelector extends HttpServlet {
 			if(majorBucket == minorBucket){
 				rs.next();
 				majorStart = rs.getInt("MIN(QID)");
-				minorStart = rs.getInt("MIN(QID)");
+				minorStart = majorStart + 6;
 			}
 			else{
 				while(rs.next()){
