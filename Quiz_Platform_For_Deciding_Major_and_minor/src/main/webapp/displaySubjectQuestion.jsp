@@ -1,29 +1,28 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+<%@ page import = "java.sql.*, javax.servlet.*, javax.servlet.http.*, userDefined.*" %>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="ISO-8859-1">
 <title>Question</title>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style1.css">
 </head>
 <body>
-	<%@ page import = "java.sql.*, javax.servlet.*, javax.servlet.http.*, userDefined.*" %>
-	<div class=" prop center1"><a href="homePage.jsp" target="_self">Home</a></div><br>
-	<%! int question = 5; %>
+	<%! int question = 9; %>
 	<%
 	System.out.println("***********************");
 	System.out.println("question = " + question);
 		session = request.getSession();
 		int majorStart = (int)session.getAttribute("majorStart");
 		int minorStart = (int)session.getAttribute("minorStart");
-		if(question == 5){
+		if(question == 9){
 			session.setAttribute("currentQID", majorStart);
 		}
-		else if (question == 11){
+		else if (question == 15){
 			session.setAttribute("currentQID", minorStart);
 		}
-		else if(question >= 17){
+		else if(question >= 21){
 			System.out.println("Arrived");
 			RequestDispatcher req = request.getRequestDispatcher("/majorMinorDecider");
 			req.include(request,  response);
@@ -33,7 +32,7 @@
 			temp++;
 			session.setAttribute("currentQID", temp);
 		}
-		if(question < 17){
+		if(question < 21){
 			int questionNumber = (int)session.getAttribute("currentQID");
 			System.out.println("questionNumber = " + questionNumber);
 			Question display = new Question(questionNumber);
@@ -41,11 +40,10 @@
 			question++;
 	%>
 	<div id="center2">
-	<div id="quizDiv">
 		<div id="center2">
-			<%= display.question %>
-		</div>
-		<form name="Form">
+		<p style="font-weight: bold; font-size: 22px"><%= display.question %></p>
+	</div>
+	<div id="center22"><form name="Form">
   <input type="radio" name="id" id="id1" value="1" required>
   <label for="id1"><%= display.option1 %></label>
   <br><br>
@@ -63,8 +61,7 @@
   <br><br>
   <br>
 		<button type="button" onclick="setResponse(2)">Next</button>
-</form>
-	</div>
+</form></div>
 	</div>
 	<% } %>
 	<div id="response"></div>

@@ -65,7 +65,7 @@ public class bucketSelector extends HttpServlet {
 	private void singleBucketClash(Connection con, ResultSet rs, HttpSession session, int clashedNum, String bucketName) throws SQLException{
 		int bucket = bucketClash(con, rs, clashedNum);
 		if(bucket == -1) {
-			System.out.println(bucketName + " = " + bucket);
+			System.out.println("bucket = " + bucket);
 		}
 		else {
 			System.out.println(bucketName+ " = "+bucket);
@@ -109,6 +109,7 @@ public class bucketSelector extends HttpServlet {
 				get.next();
 				int freq_2 = get.getInt("MAX(freq)");
 				get.close();
+				System.out.println("freq = " + freq + "\t freq_2 = " + freq_2);
 				
 				// 3 different options are selected
 				if(numSelected == 3){
@@ -131,7 +132,7 @@ public class bucketSelector extends HttpServlet {
 						}
 					}
 					if(freq == 3) {
-						singleBucketClash(con, rs, session, 2, minor);
+						singleBucketClash(con, rs, session, 2, major);
 						setBucket(rs, session, minor);
 					}
 				}
@@ -147,7 +148,7 @@ public class bucketSelector extends HttpServlet {
 						setBucket(rs, session, minor);
 					}
 					if(freq == 3) {
-						if(freq_2 == 3) {
+						if(freq_2 == 1) {
 							singleBucketClash(con, rs, session, 2, major);
 							singleBucketClash(con, rs, session, 2, minor);
 						}
@@ -157,6 +158,7 @@ public class bucketSelector extends HttpServlet {
 						}
 					}
 					if(freq == 2) {
+						//change code here
 						bucket = bucketClash(con, rs, 2);
 						if(bucket == -1) {
 							System.out.println("bucket = " + bucket);

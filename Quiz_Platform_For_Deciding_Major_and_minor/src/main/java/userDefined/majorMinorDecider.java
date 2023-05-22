@@ -52,7 +52,6 @@ public class majorMinorDecider extends HttpServlet {
 				minorSubjectList[count] = rs.getInt("Subject");
 				count++;
 			}
-			
 			System.out.println("#############");			
 			for(int i = 0; i < 5; i++) {
 				System.out.println("majorSubjectList[" + i + "] = " + majorSubjectList[i]);
@@ -62,13 +61,12 @@ public class majorMinorDecider extends HttpServlet {
 				System.out.println("minorSubjectList[" + i + "] = " + minorSubjectList[i]);
 			}
 			System.out.println("#############");
-			
-			RequestDispatcher req = request.getRequestDispatcher("/majorMinorList.jsp");
+			RequestDispatcher req = request.getRequestDispatcher("majorMinorList.jsp");
 			req.include(request,  response);
 		}
-		catch(SQLException e) {
+		catch(SQLException e) 
+		{
 			e.printStackTrace();
 		}
 	}
-
 }
