@@ -1,3 +1,5 @@
+******Framework for choosing Major and Minor in Context of NEP 2020******
+
 This work presents a framework for guiding students in making a decision about their college majors and minors by considering the principles outlined in NEP 2020. This framework
 is aimed to provide students with a structured approach which encourages them to consider their interests, abilities and career prospects without any bias and suggests the suitable majors and minors which can be considered.
 
