@@ -6,6 +6,7 @@ A visual representation of the key components of the framework:
 
 <img width="304" alt="image" src="https://github.com/user-attachments/assets/c750898a-b904-422a-9cf0-9638124be241" />
 <img width="275" alt="image" src="https://github.com/user-attachments/assets/f1485101-264b-469d-b47e-70a7fda45ee9" />
+
 **Personality Questions:** These questions help in determining the specific buckets of subjects to which
 the participant is best suited to. The questions are based
 on the analysis of a conducted survey, where a google form was circulated to collect information from students in various colleges regarding their reasons and motives for pursuing their current majors. Personality questions have 6 options each, which directly map to one of the buckets present in the framework, i.e., when the participant chooses a specific option for a
@@ -16,7 +17,9 @@ personality question, then the bucket to which the selected option is linked to 
 **Minor Bucket Deciding Questions:** This category of questions is chosen in a similar way to that of the Major Bucket Deciding Questions.
 
 <img width="308" alt="image" src="https://github.com/user-attachments/assets/8f2e1865-8d6f-4224-9d4d-4ca06601db65" />
+
 UI of the Quiz Platform appears as:
+
 <img width="469" alt="image" src="https://github.com/user-attachments/assets/adc9e85c-1b8e-4ecb-a573-2e15715bb5fc" />
 <img width="478" alt="image" src="https://github.com/user-attachments/assets/ab528fe1-3073-460c-a1f9-87b7a6b26bbc" />
 
